@@ -13,7 +13,7 @@ export default function Login() {
 
 
   const getUserName = (e : ChangeEvent<HTMLInputElement>) => {
-      setUser({[e.target.name] : e.target.value})
+      setUser({[e.target.name] : e.target.value.toLowerCase()})
   }
 
   const login = async (e : FormEvent) => {
